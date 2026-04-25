@@ -689,7 +689,104 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+/* ===== Certifications Section ===== */
+.certifications-section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
 
+.certifications-section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .certifications-section h3 {
+    color: var(--dark-text);
+}
+
+/* GRID (same as education) */
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* CARD (same as education-card) */
+.cert-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+[data-theme="dark"] .cert-card {
+    background: var(--dark-primary);
+    border-color: var(--dark-border);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(16, 185, 129, 0.1);
+    border-color: var(--accent);
+}
+
+/* ICON */
+.cert-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(5, 150, 105, 0.2));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+
+/* CONTENT */
+.cert-content h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: var(--text-primary);
+}
+
+[data-theme="dark"] .cert-content h4 {
+    color: var(--dark-text);
+}
+
+.cert-issuer {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.cert-date {
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .cert-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cert-icon {
+        margin-bottom: 1rem;
+    }
+}
 /* ===== Expertise Section ===== */
 
 /* ===== Professional Experience ===== */
