@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website built to showcase my skills, pro
 
 ---
 
-## 🌐 Live Demo
+## 🌐 Live Website
 
 🔗 Visit Portfolio: https://ridmijayawardhana.github.io/My-New-Portfolio/
 
